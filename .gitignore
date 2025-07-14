@@ -1,0 +1,35 @@
+# Laravel & Composer
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/*.log
+/storage/framework/*
+!storage/.gitignore
+/bootstrap/cache/*
+.phpunit.result.cache
+.phpunit.cache
+composer.lock
+auth.json
+
+# Environment files
+.env
+.env.backup
+.env.production
+.env.testing
+
+# IDEs and tools
+.DS_Store
+Thumbs.db
+/.idea
+/.vscode
+/.fleet
+/.nova
+/.zed
+/phpactor.json
+
+# Project files to keep
+!.env.example
+!.editorconfig
