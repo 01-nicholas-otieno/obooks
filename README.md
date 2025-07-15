@@ -37,9 +37,8 @@ cp .env.example .env
 php artisan key:generate
 
 
-# Ensure directories exist and are writable
+# Ensure directories exist
 mkdir -p storage/framework/views bootstrap/cache
-chmod -R 775 storage bootstrap/cache
 
 # Clear and rebuild caches
 php artisan config:clear
