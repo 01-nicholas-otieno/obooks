@@ -28,12 +28,22 @@ git clone https://github.com/01-nicholas-otieno/obooks.git
 cd obooks
 composer install
 ```
+## Setup
 
 ### Step 3: Environment Configuration
 
 ```bash
 cp .env.example .env
 php artisan key:generate
+
+
+# Ensure directories exist and are writable
+mkdir -p storage/framework/views bootstrap/cache
+chmod -R 775 storage bootstrap/cache
+
+# Clear and rebuild caches
+php artisan config:clear
+php artisan view:clear
 ```
 
 ### Step 4: Database Setup
